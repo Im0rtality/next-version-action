@@ -1,0 +1,11 @@
+name: 'Next Version'
+inputs:
+    suffix:
+        description: 'A suffix used for this branch of releases (e.g. git branch)'
+        required: true
+outputs:
+    version:
+        description: 'Next Version'
+runs:
+    using: 'node16'
+    main: 'dist/index.js'
